@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HelloKitty惊喜</title>
+    <style>
+        :root {
+            --hello-color: #ffb6c1;
+            --hello-accent-color: #000;
+            --background-color: #fff0f5;
+            --heart-color: #ff1493;
+            --ribbon-color: #ff69b4;
+        }
+        
+        body{
+            background: var(--background-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            overflow: hidden;
+        }
+        
+        .box-canvas{
+            position: relative;
+            width: 600px;
+            height: 600px;
+        }
+        
+        /* HelloKitty wrapper */
+        .hello-kitty {
+            position: absolute;
+            right: 100px;
+            top: -50px;
+            animation: helloSlide 3s ease-in-out forwards;
+        }
+        
+        @keyframes helloSlide {
+            0% {
+                transform: translateY(-100px) rotate(10deg);
+                opacity: 0;
+            }
+            50% {
+                transform: translateY(150px) rotate(-5deg);
+                opacity: 1;
+            }
+            80% {
+                transform: translateY(180px) rotate(2deg);
+            }
+            100% {
+                transform: translateY(180px) rotate(0deg);
+            }
+        }
+        
+        /* HelloKitty image */
+        .hello-kitty img {
+            width: 200px;
+            height: 200px;
+            animation: helloBounce 2s infinite ease-in-out 1s;
+        }
+        
+        @keyframes helloBounce {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.05);
+            }
+        }
+        
+        /* Floating hearts */
+        .hearts {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+        
+        .heart {
+            position: absolute;
+            background: var(--heart-color);
+            width: 20px;
+            height: 20px;
+            transform: rotate(45deg);
+            animation: heartFloat 3s infinite ease-in-out;
+        }
+        
+        .heart::before,
+        .heart::after {
+            content: '';
+            position: absolute;
+            background: var(--heart-color);
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+        
+        .heart::before {
+            top: -10px;
+            left: 0;
+        }
+        
+        .heart::after {
+            left: -10px;
+            top: 0;
+        }
+        
+        .heart:nth-child(1) {
+            top: 20%;
+            left: 30%;
+            animation-delay: 0s;
+        }
+        
+        .heart:nth-child(2) {
+            top: 40%;
+            left: 70%;
+            animation-delay: 0.5s;
+        }
+        
+        .heart:nth-child(3) {
+            top: 60%;
+            left: 20%;
+            animation-delay: 1s;
+        }
+        
+        .heart:nth-child(4) {
+            top: 30%;
+            left: 80%;
+            animation-delay: 1.5s;
+        }
+        
+        .heart:nth-child(5) {
+            top: 70%;
+            left: 60%;
+            animation-delay: 2s;
+        }
+        
+        @keyframes heartFloat {
+            0% {
+                transform: rotate(45deg) translateY(0px) scale(1);
+                opacity: 0;
+            }
+            10% {
+                opacity: 1;
+            }
+            90% {
+                opacity: 1;
+            }
+            100% {
+                transform: rotate(45deg) translateY(-100px) scale(0.5);
+                opacity: 0;
+            }
+        }
+        
+        /* Decorative text */
+        .message {
+            position: absolute;
+            top: 450px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            color: var(--ribbon-color);
+            text-align: center;
+            animation: messageAppear 2s ease-in-out 2s forwards;
+            opacity: 0;
+        }
+        
+        @keyframes messageAppear {
+            0% {
+                opacity: 0;
+                transform: translateX(-50%) translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(-50%) translateY(0px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box-canvas">
+        <div class="hello-kitty">
+            <img src="hello.PNG" alt="HelloKitty">
+        </div>
+        <div class="hearts">
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+            <div class="heart"></div>
+        </div>
+        <div class="message">
+            送给佳佳最可爱的HelloKitty~
+        </div>
+    </div>
+</body>
+</html>

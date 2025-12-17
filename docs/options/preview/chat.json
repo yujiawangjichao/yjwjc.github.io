@@ -1,0 +1,151 @@
+[
+    { "msgs": ["Hi，佳佳～ 在干嘛呀在干嘛呀～"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["知道明天是什么日子嘛嘛嘛～？猜对有奖励哟！"],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["12月19日", "12月19", "1219", "12.19", "见面", "相遇", "第一次", "纪念日", "重要日子", "特殊日子", "我们的一天", "在一起", "定情", "约会"],
+                "rejectKeyTexts": [],
+                "rejectHitTexts": [
+                    "嘿嘿～给你个小提示：明天是2025年12月的第19天喔～",
+                    "哎呀，这都不知道嘛？鼠鼠要伤心了...不过告诉你吧，明天是我们相遇的纪念日啦！",
+                    "好吧好吧～告诉你啦，明天是12月19日，是我们见面的日子，也是我想你的又一天～"
+                ]
+            }
+        }
+    },
+    {
+        "msgs": ["那你知道我现在的小脑袋瓜里在想什么嘛？"],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["想我", "想佳佳", "佳佳", "喜欢我", "爱我", "思念", "惦记", "在乎", "心动", "小鹿乱撞", "犯花痴", "犯傻", "发呆", "傻笑"],
+                "rejectKeyTexts": ["不想", "讨厌", "烦我"],
+                "rejectHitTexts": [
+                    "哼～猜错了啦！再给你一次机会，提示：是个超级可爱的小公举儿～",
+                    "你你你...你居然猜不到！当然是在想我家佳佳小公主啦！",
+                    "哎呀，就是在想我的佳佳宝贝嘛～这还用猜？"
+                ]
+            }
+        }
+    },
+    {
+        "msgs": ["bingo～答对啦！我现在满脑子都是打游戏hhh", "我现在当然是在想我的佳佳小公主啦～想得都快变成小傻瓜了！"],
+        "msgInputSpeed": 80
+    },
+    { "msgs": ["什么？佳佳才不信？呜呜呜...超超的心都碎成渣渣了～"], "msgInputSpeed": 100 },
+    { "msgs": ["话说...佳佳是不是还没收到本超超精心准备的惊喜呀？"], "msgInputSpeed": 140 },
+    { "msgs": ["（可怜的佳佳宝贝～都没有收到礼物，超超好心疼😭😭😭）"], "msgInputSpeed": 180 },
+    { "msgs": ["别伤心别伤心！超超可是早有准备的，保证让佳佳开心到飞起～"], "msgInputSpeed": 80 },
+    { "msgs": ["赛博礼物已经在路上飞奔过来啦～希望佳佳会喜欢，不喜欢的话...超超的线下礼物会给出答案嘻嘻！"], "msgInputSpeed": 80 },
+    {
+        "msgs": ["<span><a href=\"options/preview/hellokitty.html\">这是送给佳佳的一只超级可爱的HelloKitty～</a></span>"],
+        "msgInputSpeed": 80
+    },    
+    {
+        "msgs": ["等等！还有还有！鼠鼠还准备了一个超级可爱的哆啦A梦～"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["<span><a href=\"https://codepen.io/vergilOvO/full/OPNeeVM\" target=\"_blank\">这是送给佳佳的哆啦A梦精灵动画，超级可爱哦！</a></span>"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["等等！还有还有！超超还准备了一棵超级漂亮的圣诞树～"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["<span><a href=\"https://codepen.io/vergilOvO/full/MYyMMaO\" target=\"_blank\">这是送给佳佳的圣诞树，希望佳佳的圣诞节充满温暖和快乐！</a></span>"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["等等！超超突然想起来还有一件超级重要的事情！"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["佳佳想不想看看超超手机里最珍贵的照片呀？"],
+        "msgInputSpeed": 80,
+        "triggerNextAction": {
+            "type": "userInput",
+            "options": {
+                "resolveKeyTexts": ["想", "想看", "想看照片", "什么照片", "好奇", "当然想", "快给我看", "给我看看", "看看", "好", "好的", "可以", "行", "没问题", "当然", "必须的", "肯定想", "想啊", "想呀", "想呢", "想啦", "想咯", "想嘛", "想看啊", "想看呀", "想看呢", "想看啦", "想看咯", "想看嘛", "想看照片啊", "想看照片呀", "想看照片呢", "想看照片啦", "想看照片咯", "想看照片嘛"],
+                "rejectKeyTexts": ["不想", "不要", "不看", "没兴趣", "算了", "不用", "不必", "免了", "拉倒", "不想看", "不要看", "不想啊", "不想呀", "不想呢", "不想啦", "不想咯", "不想嘛"],
+                "rejectHitTexts": [
+                    "哼～佳佳居然不想看！超超要伤心了...再给你一次机会！",
+                    "哎呀，这可是超超珍藏的宝贝照片呢！真的不想看看嘛？",
+                    "好吧好吧～那超超就自己偷偷欣赏啦！"
+                ]
+            }
+        }
+    },
+    {
+        "msgs": ["嘿嘿～那佳佳准备好啦！第一张是..."],
+        "msgInputSpeed": 100
+    },
+    {
+        "msgs": ["当当当当！这是佳佳的美照！是不是超级无敌可爱！"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["<img src='options/preview/jiajia.jpg' style='max-width: 300px; border-radius: 15px; box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);'/>"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["佳佳是不是被自己的美貌惊艳到了？嘿嘿～"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["等等！还有第二张！这张就比较...咳咳..."],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["这是超超的丑照！为了衬托佳佳的美貌，超超豁出去了！"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["<img src='options/preview/cc.jpg' style='max-width: 300px; border-radius: 15px; box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);'/>"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["看到没？这就是美女与野兽的完美组合！"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["等等！还有第三张！这张是最最最珍贵的！"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["当当当当！这是我们的合照！超超最最最宝贝的照片！"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["<img src='options/preview/hezhao.jpg' style='max-width: 300px; border-radius: 15px; box-shadow: 0 0 20px rgba(255, 215, 0, 0.5);'/>"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["看到这张照片，超超就会想起和佳佳在一起的每一个快乐瞬间～"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["而且呀，鼠鼠还有好多好多心里话想对佳佳说，都写在一封小信信里啦～"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["<letter src='options/preview/letter-yujia.json'/>"],
+        "triggerNextAction": { "type": "componentClose" }
+    },
+    { "msgs": ["佳佳快看看，超超的文采怎么样？是不是被我的才华折服了？"] },
+    { "msgs": ["<img src='options/preview/感动到哭.png'/>"] },
+    {
+        "msgs": ["等等！还有最后一个惊喜！"],
+        "msgInputSpeed": 80
+    },
+    {
+        "msgs": ["<span><a href=\"https://codepen.io/vergilOvO/full/Wbwqqbo\" target=\"_blank\">这是送给佳佳的烟花，庆祝我们的相遇纪念日！</a></span>"],
+        "msgInputSpeed": 80
+    },
+    { "msgs": ["嘿嘿～结束啦！但是超超对佳佳的喜欢永远不会结束哦～"], "msgInputSpeed": 80 }
+]
